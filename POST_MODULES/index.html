@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        body{
+            background-color: pink;
+        }
+        #submit{
+            margin-top: 2em;
+            border-radius: 10px;
+            background-color: black;
+            color:pink;
+            }
+    </style>
+</head>
+    <body>
+<form action='http://127.0.0.1:3000/process_post' method='POST'>
+    First Name:<input type="text" name="first_name"> <br>
+    Last Name:<input type="text" name="last_name"><br>
+    <p><label for="age">Age:</label></p>
+  <textarea id="age" name="age" rows="1" cols="20"></textarea><br><br>
+    
+    <label for="course">Choose a course:</label>
+<select name="course" id="course" form="course">
+  <option value="WEBDEV">WEB  DEVELOPMENT</option>
+  <option value="CYB">CYBER SECURITY</option>
+  <option value="COMPSCI">COMPUTER SCIENCE</option>
+  <option value="NETAD">NETWORK ADMINISTRATION</option>
+</select><br>
+
+    <p>What language are you familiar with?</p>
+    <input type="checkbox" id="language_1" name="language_1" value="PHP">
+  <label for="language_1"> PHP</label><br>
+  <input type="checkbox" id="language_2" name="language_2" value="JAVA">
+  <label for="language_2"> JAVA</label><br>
+  <input type="checkbox" id="language_3" name="language_3" value="HTML">
+  <label for="language_3"> HTML</label><br>
+  <p>Please select your year level:</p>
+  <input type="radio" id="first" name="year_level" value="First Year">
+  <label for="first">First Year</label><br>
+  <input type="radio" id="second" name="year_level" value="Second Year">
+  <label for="second">Second Year</label><br>
+  <input type="radio" id="third" name="year_level" value="Third Year">
+  <label for="third">Third Year</label>
+  <br>
+  <input type="radio" id="fourth" name="year_level" value="Fourth Year">
+  <label for="fourth">Fourth Year</label><br>
+    <input type="submit" value="Submit" id="submit">
+</body>
+</form>
+</html>
